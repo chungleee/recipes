@@ -57,3 +57,44 @@ module: {
 ```
 npm i react react-dom
 ```
+
+5.	Bundling CSS
+```
+npm i css-loader style-loader
+```
+
+webpack.config.js
+```
+...
+{
+	test: /\.css$/,
+	use: ['style-loader', 'css-loader']
+}
+```
+
+6.	HTML plugin
+```
+npm i html-webpack-plugin
+```
+
+webpack.config.js
+```
+module: {
+	...
+},
+plugins: [
+		new HtmlWebpackPlugin({
+			template: './src/index.html'
+		})
+]
+```
+
+6.	Webpack hot reloading
+```
+npm i webpack-dev-server
+```
+
+package.json
+```
+scripts: "webpack-dev-server --mode development --open --hot"
+```
