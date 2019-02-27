@@ -13,7 +13,9 @@ package.json
 ```
 npm i webpack webpack-cli
 ```
-```webpack.config.js
+
+webpack.config.js
+```
 module.exports = {
 	entry: './src/index.js',  --> entry file aka the file you want to bundle
 	output: {
@@ -28,12 +30,15 @@ module.exports = {
 npm i @babel/core @babel/preset-env @babel/preset-react babel-loader
 ```
 
-```.babelrc
+.babelrc
+```
 {
 	"presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
-```webpack.config.js
+
+webpack.config.js
+```
 ...
 module: {
 		rules: [
