@@ -5,3 +5,7 @@
 1. Project structure
 ```
 src
+	index.js
+package.json
+webpack.config.js
+```
